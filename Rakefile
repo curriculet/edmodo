@@ -19,7 +19,7 @@ begin
     gem.summary = %Q{A Ruby Wrapper for the Edmodo API http://www.edmodo.com/}
     gem.description = %Q{Edmodo wraps the Edmodo API nicely}
     gem.email = "mauricio@curriculet.com"
-    gem.homepage = "http://github.com/alvarezm50/edmodo"
+    gem.homepage = "https://github.com/alvarezm50/edmodo"
     gem.authors = ["Mauricio Alvarez"]
   end
   Jeweler::RubygemsDotOrgTasks.new
