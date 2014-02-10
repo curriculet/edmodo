@@ -25,9 +25,6 @@ Configure Edmodo to use your Edmodo App API key:
            c.testing    = true
     end
 
-## Documentation
-
-http://rdoc.info/github/alvarezm50/edmodo/master/frames
 
 Use Edmodo in your ruby app:
 ```
@@ -37,6 +34,10 @@ Use Edmodo in your ruby app:
     # Launch your application
     group_members  = Edmodo.users.find_all_by_group_ids( [ id1, id2, id3 ], <YOUR-ACCESS-TOKEN> )
 ```
+## Documentation
+
+http://rdoc.info/github/alvarezm50/edmodo/master/frames
+
 
 ## Contributing
 1. Fork it
