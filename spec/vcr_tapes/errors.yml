@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1/200?api_key=<EDMODO_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+  recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1/400?api_key=<EDMODO_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:17:13 GMT
+  recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1/401?api_key=<EDMODO_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Not Authorized
+    headers:
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:18:13 GMT
+  recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1/404?api_key=<EDMODO_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+  recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1/500?api_key=<EDMODO_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Server Error
+    headers:
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+  recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1/502?api_key=<EDMODO_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 502
+      message: Service Unavailable
+    headers:
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+  recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1/503?api_key=<EDMODO_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 503
+      message: Rate Limited
+    headers:
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+  recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1/499?api_key=<EDMODO_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 499
+      message: Weird Status
+    headers:
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+  recorded_with: VCR 2.4.0
+

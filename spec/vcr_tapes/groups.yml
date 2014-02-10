@@ -1,0 +1,402 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1.1/groups?access_token=<EDMODO_ACCESS_TOKEN>&api_key=<EDMODO_API_KEY>&group_ids=%5B0%5D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Dec 2013 17:42:41 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Set-Cookie:
+      - EDMODOSESSID=1e4kqbv0fh5d43ijc2oj2lf6c1; path=/; domain=.edmodobox.com; secure;
+        HttpOnly
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '[]'
+    http_version: 
+  recorded_at: Thu, 12 Dec 2013 17:42:41 GMT
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1.1/groups?access_token=<EDMODO_ACCESS_TOKEN>&api_key=<EDMODO_API_KEY>&group_ids=%5B%22582139%22%5D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Dec 2013 18:16:13 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Set-Cookie:
+      - EDMODOSESSID=adjcs0tjaufh4c66cudq5f3um2; path=/; domain=.edmodobox.com; secure;
+        HttpOnly
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.8
+      Content-Length:
+      - '979'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '[{"group_id":582139,"title":"English Group A (testing)","member_count":3,"owners":["a1b9fe377"],"subject":"language-arts","sub_subject":"english","start_level":"6th","end_level":"6th"}]'
+    http_version: 
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1.1/groups?access_token=<EDMODO_ACCESS_TOKEN>&api_key=<EDMODO_API_KEY>&group_ids=%5B%22582139%22,%22583203%22%5D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Dec 2013 17:45:18 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Set-Cookie:
+      - EDMODOSESSID=dm82mr15c4i8f1iei9vqr3aao0; path=/; domain=.edmodobox.com; secure;
+        HttpOnly
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.8
+      Content-Length:
+      - '355'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '[{"group_id":582139,"title":"English Group A (testing)","member_count":3,"owners":["a1b9fe377"],"subject":"language-arts","sub_subject":"english","start_level":"6th","end_level":"6th"},{"group_id":583203,"title":"Group
+        Two","member_count":1,"owners":["a1b9fe377"],"subject":"language-arts","sub_subject":"english","start_level":"11th","end_level":"11th"}]'
+    http_version: 
+  recorded_at: Thu, 12 Dec 2013 17:45:19 GMT
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1.1/groups?access_token=<EDMODO_ACCESS_TOKEN>&api_key=<EDMODO_API_KEY>&group_ids=%5B582139%5D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Dec 2013 18:34:33 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Set-Cookie:
+      - EDMODOSESSID=kgqiq83hqga81rel1i55880us3; path=/; domain=.edmodobox.com; secure;
+        HttpOnly
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.8
+      Content-Length:
+      - '185'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: !ruby/string
+        str: ! '[{"group_id":582139,"title":"English Group A (testing)","member_count":3,"owners":["a1b9fe377"],"subject":"language-arts","sub_subject":"english","start_level":"6th","end_level":"6th"}]'
+        net_http_res: &70096433950840 !ruby/object:Net::HTTPOK
+          http_version: '1.0'
+          code: '200'
+          message: OK
+          header:
+            cache-control:
+            - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+            content-type:
+            - application/json
+            date:
+            - Thu, 12 Dec 2013 18:34:33 GMT
+            expires:
+            - Thu, 19 Nov 1981 08:52:00 GMT
+            pragma:
+            - no-cache
+            server:
+            - Apache/2.2.22 (Ubuntu)
+            set-cookie:
+            - EDMODOSESSID=kgqiq83hqga81rel1i55880us3; path=/; domain=.edmodobox.com;
+              secure; HttpOnly
+            x-powered-by:
+            - PHP/5.3.10-1ubuntu3.8
+            content-length:
+            - '185'
+            connection:
+            - keep-alive
+          body: !ruby/string
+            str: ! '[{"group_id":582139,"title":"English Group A (testing)","member_count":3,"owners":["a1b9fe377"],"subject":"language-arts","sub_subject":"english","start_level":"6th","end_level":"6th"}]'
+            net_http_res: *70096433950840
+            args: &70096446299980
+              :user: ''
+              :password: ''
+              :method: :get
+              :url: https://appsapi.edmodobox.com/v1.1/groups?group_ids=[582139]&api_key=<EDMODO_API_KEY>&access_token=<EDMODO_ACCESS_TOKEN>
+              :headers: {}
+              :open_timeout: 30
+              :payload: 
+              :timeout: 80
+            code: 200
+          read: true
+          __read_body_previously_called: true
+        args: *70096446299980
+        code: 200
+    http_version: 
+  recorded_at: Thu, 12 Dec 2013 18:34:33 GMT
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1.1/users?access_token=<EDMODO_ACCESS_TOKEN>&api_key=<EDMODO_API_KEY>&user_tokens=%5B%22a1b9fe377%22%5D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Dec 2013 19:41:25 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Set-Cookie:
+      - EDMODOSESSID=73g2e09mbbarrnq9sk7etob2c5; path=/; domain=.edmodobox.com; secure;
+        HttpOnly
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.8
+      Content-Length:
+      - '319'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '[{"user_token":"a1b9fe377","title":"NONE","first_name":"gobstopperinc-teacher1","last_name":"Teacher","user_type":"TEACHER","avatar_url":"https:\/\/box.u.ph.edim.co\/default-avatars\/default_avatar.png","thumb_url":"https:\/\/box.u.ph.edim.co\/default-avatars\/default_avatar_t.png","time_zone":"America\/Los_Angeles"}]'
+    http_version: 
+  recorded_at: Thu, 12 Dec 2013 19:41:25 GMT
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1.1/members?access_token=<EDMODO_ACCESS_TOKEN>&api_key=<EDMODO_API_KEY>&group_id=BOGUS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Dec 2013 18:16:13 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Set-Cookie:
+      - EDMODOSESSID=69tiijuqoj1tgfg49dvdaea831; path=/; domain=.edmodobox.com; secure;
+        HttpOnly
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.8
+      Content-Length:
+      - '94'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1.1/groups?access_token=<EDMODO_ACCESS_TOKEN>&api_key=<EDMODO_API_KEY>&group_ids=%5B%22BOGUS%22%5D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Dec 2013 18:16:13 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Set-Cookie:
+      - EDMODOSESSID=69tiijuqoj1tgfg49dvdaea831; path=/; domain=.edmodobox.com; secure;
+        HttpOnly
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.8
+      Content-Length:
+      - '94'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":{"code":9000,"message":"Requested action failed. Invalid
+        or unavailable user tokens"}}'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 18:16:13 GMT
+- request:
+    method: get
+    uri: https://appsapi.edmodobox.com/v1.1/members?access_token=<EDMODO_ACCESS_TOKEN>&api_key=<EDMODO_API_KEY>&group_id=582139
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Dec 2013 19:48:40 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.22 (Ubuntu)
+      Set-Cookie:
+      - EDMODOSESSID=svm8ttisdk6eqhktraoudi4t65; path=/; domain=.edmodobox.com; secure;
+        HttpOnly
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.8
+      Content-Length:
+      - '319'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '[{"user_token":"a1b9fe377","title":"NONE","first_name":"gobstopperinc-teacher1","last_name":"Teacher","user_type":"TEACHER","avatar_url":"https:\/\/box.u.ph.edim.co\/default-avatars\/default_avatar.png","thumb_url":"https:\/\/box.u.ph.edim.co\/default-avatars\/default_avatar_t.png","time_zone":"America\/Los_Angeles"}]'
+    http_version:
+  recorded_at: Thu, 12 Dec 2013 19:48:40 GMT
+recorded_with: VCR 2.4.0
