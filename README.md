@@ -25,6 +25,10 @@ Configure Edmodo to use your Edmodo App API key:
            c.testing    = true
     end
 
+## Documentation
+
+http://rdoc.info/github/alvarezm50/edmodo/master/frames
+
 Use Edmodo in your ruby app:
 ```
     # Get all group members
