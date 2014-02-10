@@ -47,7 +47,7 @@ Gem::Specification.new do |s|
     "spec/vcr_tapes/launchrequest.yml",
     "spec/vcr_tapes/users.yml"
   ]
-  s.homepage = "http://github.com/alvarezm50/edmodo"
+  s.homepage = "https://github.com/alvarezm50/edmodo"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.2.1"
   s.summary = "A Ruby Wrapper for the Edmodo API http://www.edmodo.com/"
