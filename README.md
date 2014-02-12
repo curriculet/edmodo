@@ -18,11 +18,11 @@ And then execute:
 Configure Edmodo to use your Edmodo App API key:
 
     Edmodo.configure do |config|
-           c.api_key    = <MY-API-KEY>
-           c.api_verion = 'v1.1'
-           c.endpoint   = 'https://appsapi.edmodobox.com'
-           c.timeout    = '10' #seconds
-           c.testing    = true
+           c.api_key     = <MY-API-KEY>
+           c.api_version = 'v1.1'
+           c.endpoint    = 'https://appsapi.edmodobox.com'
+           c.timeout     = '10' #seconds
+           c.testing     = true
     end
 
 
