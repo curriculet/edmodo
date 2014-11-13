@@ -72,11 +72,13 @@ module Edmodo
       #
       # @return [String]. The raw response body (JSON is expected) Raises appropriate exception if it fails
       # @raise Edmodo::HTTPError when any HTTP error response is received
-      def post( path, body={}, headers={} )
+      def post( path, params={}, headers={} )
+        post_options = build_get_options( params, headers) # Edmodo API wants post params to be in query, not body
+        yield post_options if block_given?
         #puts "CALLING API: #{Edmodo.api_url( path )} ===#{post_options}"
-        response = self.class.post( path, { body: body.to_json, headers: headers })
+        response = self.class.post( path, post_options )
 
-        handle_response(response, body)
+        handle_response(response, params)
       end
 
       # build_get_options
