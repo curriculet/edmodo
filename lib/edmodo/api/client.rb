@@ -58,6 +58,43 @@ module Edmodo
         #puts "CALLING API: #{Edmodo.api_url( path )} ===#{get_options}"
         response = self.class.get( path, get_options)
 
+        handle_response(response, params)
+      end
+
+      # build_get_options
+      # Build the hash of options for an HTTP get request.
+      #
+      # @param params  [Hash] optional. Any query parameters to add to the request.
+      # @param user_headers [Hash] optional. Any query parameters to add to the request.
+      #
+      # @return [Hash] The properly formated get_options.
+      # @raise [Edmodo::InvalidCredentials] if the access_token is required but not supplied in the params API v1.1
+      def build_get_options( params={}, user_headers={})
+        get_options = {}
+        query = {}
+
+        # Add the access token
+        query[:access_token] = params[:access_token] if params[:access_token]
+        # if Edmodo.access_token_required?
+        #   raise Edmodo::InvalidCredentials.new(" :access_token query parameter required when using API version #{Edmodo.api_version}") if params[:access_token].nil? || params[:access_token].empty?
+        #   query[:access_token] = params[:access_token] if params[:access_token]
+        # end
+        query.merge!(params)
+        get_options[:query]   = query
+
+        # pass any headers
+        headers ={}
+        headers.merge!( user_headers )
+        get_options[:headers] = headers
+
+        get_options
+      end
+
+
+      private
+      #========================================================================
+
+      def handle_response(response, params)
         case response.code
           when 200..201
             response
@@ -76,35 +113,6 @@ module Edmodo
           else
             raise Edmodo::UnknownStatusCode.new(response, params)
         end
-
-      end
-
-      # build_get_options
-      # Build the hash of options for an HTTP get request.
-      #
-      # @param params  [Hash] optional. Any query parameters to add to the request.
-      # @param user_headers [Hash] optional. Any query parameters to add to the request.
-      #
-      # @return [Hash] The properly formated get_options.
-      # @raise [Edmodo::InvalidCredentials] if the access_token is required but not supplied in the params API v1.1
-      def build_get_options( params={}, user_headers={})
-        get_options = {}
-        query = {}
-
-        # Add the access token
-        if Edmodo.access_token_required?
-          raise Edmodo::InvalidCredentials.new(" :access_token query parameter required when using API version #{Edmodo.api_version}") if params[:access_token].nil? || params[:access_token].empty?
-          query[:access_token] = params[:access_token] if params[:access_token]
-        end
-        query.merge!(params)
-        get_options[:query]   = query
-
-        # pass any headers
-        headers ={}
-        headers.merge!( user_headers )
-        get_options[:headers] = headers
-
-        get_options
       end
 
     end
